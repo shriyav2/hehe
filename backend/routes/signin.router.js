@@ -38,7 +38,7 @@ import express from 'express';
 const router = express.Router();
 
 router.post('/signup', (req, res) => {
-    const { username, password, email } = req.body;
+    const { name, password, email } = req.body;
     // Your signup logic here (validation, save to DB, etc.)
     res.status(201).json({ message: 'Signup successful' });
 });
